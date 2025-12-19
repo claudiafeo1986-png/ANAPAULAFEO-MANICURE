@@ -1,18 +1,17 @@
 
 import React, { useEffect } from 'react';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Services } from './components/Services';
-import { Portfolio } from './components/Portfolio';
-import { Courses } from './components/Courses';
-import { Testimonials } from './components/Testimonials';
-import { FinalCTA } from './components/FinalCTA';
-import { Footer } from './components/Footer';
-import { FloatingButtons } from './components/FloatingButtons';
+import { Hero } from './components/Hero.tsx';
+import { About } from './components/About.tsx';
+import { Services } from './components/Services.tsx';
+import { Portfolio } from './components/Portfolio.tsx';
+import { Courses } from './components/Courses.tsx';
+import { Testimonials } from './components/Testimonials.tsx';
+import { FinalCTA } from './components/FinalCTA.tsx';
+import { Footer } from './components/Footer.tsx';
+import { FloatingButtons } from './components/FloatingButtons.tsx';
 
 const App: React.FC = () => {
   useEffect(() => {
-    // Simple smooth scroll logic for anchor links if needed
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
